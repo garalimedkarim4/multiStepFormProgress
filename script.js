@@ -82,3 +82,33 @@ $(".previous").click(function(){
 $(".submit").click(function(){
 	return false;
 })
+
+
+
+/*  AngularJS SCRIPT  */
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) {
+  $scope.count = 0;
+  // $scope.maj = function(){
+  //   console.log('maj');
+  //   var val = parseInt(jQuery('[name="aws_price_calc_3567"]').val());
+  //   var newVal = val;
+  //   if (val < 3)
+  //     newVal++;
+  //   else {
+  //     newVal--;
+  //   }
+  //   console.log("val",newVal);
+  //   jQuery('[name="aws_price_calc_3567"]').attr('value' , newVal);
+  //   jQuery('[name="aws_price_calc_3567"]').trigger('keydown');
+  //   jQuery('[name="aws_price_calc_3567"]').trigger('keyup');
+  //   jQuery('[name="aws_price_calc_3567"]').attr('value' , val);
+  //   jQuery('[name="aws_price_calc_3567"]').trigger('keydown');
+  //   jQuery('[name="aws_price_calc_3567"]').trigger('keyup');
+  // }
+
+  // $scope.change2 = function(){
+  //   console.log('change2');
+  //   $scope.maj();
+  // };
+});
