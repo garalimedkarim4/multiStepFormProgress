@@ -34,7 +34,7 @@ $(".next").click(function(){ console.log('.next');
       });
 			next_fs.css({'left': left, 'opacity': opacity});
 		},
-		duration: 1200,
+		duration: 800,
 		complete: function(){
 			current_fs.hide();
 			animating = false;
@@ -69,7 +69,7 @@ $(".previous").click(function(){
 			current_fs.css({'left': left});
 			previous_fs.css({'transform': 'scale('+scale+')', 'opacity': opacity});
 		},
-		duration: 1200,
+		duration: 800,
 		complete: function(){
 			current_fs.hide();
 			animating = false;
@@ -89,26 +89,8 @@ $(".submit").click(function(){
 var app = angular.module('myApp', []);
 app.controller('myCtrl', function($scope) {
   $scope.count = 0;
-  // $scope.maj = function(){
-  //   console.log('maj');
-  //   var val = parseInt(jQuery('[name="aws_price_calc_3567"]').val());
-  //   var newVal = val;
-  //   if (val < 3)
-  //     newVal++;
-  //   else {
-  //     newVal--;
-  //   }
-  //   console.log("val",newVal);
-  //   jQuery('[name="aws_price_calc_3567"]').attr('value' , newVal);
-  //   jQuery('[name="aws_price_calc_3567"]').trigger('keydown');
-  //   jQuery('[name="aws_price_calc_3567"]').trigger('keyup');
-  //   jQuery('[name="aws_price_calc_3567"]').attr('value' , val);
-  //   jQuery('[name="aws_price_calc_3567"]').trigger('keydown');
-  //   jQuery('[name="aws_price_calc_3567"]').trigger('keyup');
-  // }
+  $scope.change = function(){
+    console.log('change2');
 
-  // $scope.change2 = function(){
-  //   console.log('change2');
-  //   $scope.maj();
-  // };
+  };
 });
