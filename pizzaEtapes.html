@@ -35,7 +35,7 @@
         <input type="text" name="twitter" placeholder="Twitter" />
         <input type="text" name="facebook" placeholder="Facebook" />
         <input type="text" name="gplus" placeholder="Google Plus" />
-        <input type="button" ng-click="navAction('#step2','#step1')" name="previous" class="previous action-button" value="Previous" />
+        <input type="button" ng-click="navBackAction('#step2','#step1')" name="previous" class="previous action-button" value="Previous" />
         <input type="button" ng-click="navAction('#step2','#step3')" name="next" class="next action-button" value="Next" />
       </fieldset>
       <fieldset id="step3">
@@ -45,7 +45,7 @@
         <input type="text" name="lname" placeholder="Last Name" />
         <input type="text" name="phone" placeholder="Phone" />
         <textarea name="address" placeholder="Address"></textarea>
-        <input type="button" ng-click="navAction('#step3','#step2')" name="previous" class="previous action-button" value="Previous" />
+        <input type="button" ng-click="navBackAction('#step3','#step2')" name="previous" class="previous action-button" value="Previous" />
         <input type="submit" name="submit" class="submit action-button" value="Submit" />
       </fieldset>
     </div>
